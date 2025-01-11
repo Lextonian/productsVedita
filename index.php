@@ -3,7 +3,6 @@ require_once 'CProducts.php';
 
 $db = new CProducts('localhost', 'root', '', 'shop');
 
-// Получаем количество строк для вывода из строки запроса
 $rowsToShow = isset($_GET['rows']) ? $_GET['rows'] : 0;
 
 $errors = [];
