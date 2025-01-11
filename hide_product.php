@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['id'])) {
         echo json_encode(['success' => false, 'error' => $e->getMessage()]);
     }
 } else {
-    echo json_encode(['success' => false, 'error' => 'Invalid request']);
+    echo json_encode(['success' => false, 'error' => 'Неверный запрос']);
 }
 
 
