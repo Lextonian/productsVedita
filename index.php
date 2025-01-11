@@ -102,6 +102,7 @@ if (empty($errors)) {
 
 
     <script>
+        // Обработчик для кнопки скрытия товара
         $(document).on('click', '.hide-button', function() {
             const row = $(this).closest('tr');
             const productId = row.data('id');
