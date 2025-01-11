@@ -12,7 +12,6 @@ class CProducts {
         }
     }
 
-    //Возможно limit = null
     public function getProducts($limit) {
         $sql = "SELECT * FROM Products ORDER BY DATE_CREATE DESC";
         if ($limit != 0) {
